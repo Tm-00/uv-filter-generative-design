@@ -30,6 +30,13 @@ Figure generation for the top-molecules structure grid (`novelty_check.py`, `src
 - On an HPC system, check for an available X11/Mesa module (`module spider X11`)
 - Add `libxrender1` to your container/environment manually
 
+Modules used for reference. 
+```
+import module
+await module.purge(force=True)
+await module.load('bb-variables/live', 'slurm-helpers/live', 'openmpi-env/live', 'bear-licences/live', 'bb-singularity-conf/live', 'bear-apps/auto-load', 'bluebear/live', 'bear-apps/2022b/live', 'GCCcore/12.2.0', 'binutils/2.39-GCCcore-12.2.0', 'bzip2/1.0.8-GCCcore-12.2.0', 'zlib/1.2.12-GCCcore-12.2.0', 'libreadline/8.2-GCCcore-12.2.0', 'ncurses/6.3-GCCcore-12.2.0', 'Tcl/8.6.12-GCCcore-12.2.0', 'SQLite/3.39.4-GCCcore-12.2.0', 'XZ/5.2.7-GCCcore-12.2.0', 'GMP/6.2.1-GCCcore-12.2.0', 'libffi/3.4.4-GCCcore-12.2.0', 'OpenSSL/1.1', 'Python/3.10.8-GCCcore-12.2.0', 'gzip/1.12-GCCcore-12.2.0', 'lz4/1.9.4-GCCcore-12.2.0', 'zstd/1.5.2-GCCcore-12.2.0', 'expat/2.4.9-GCCcore-12.2.0', 'libpng/1.6.38-GCCcore-12.2.0', 'Brotli/1.0.9-GCCcore-12.2.0', 'util-linux/2.38.1-GCCcore-12.2.0', 'fontconfig/2.14.1-GCCcore-12.2.0', 'freetype/2.12.1-GCCcore-12.2.0', 'xorg-macros/1.19.3-GCCcore-12.2.0', 'libpciaccess/0.17-GCCcore-12.2.0', 'libdrm/2.4.114-GCCcore-12.2.0', 'libglvnd/1.6.0-GCCcore-12.2.0', 'libunwind/1.6.2-GCCcore-12.2.0', 'LLVM/15.0.5-GCCcore-12.2.0', 'X11/20221110-GCCcore-12.2.0', 'Mesa/22.2.4-GCCcore-12.2.0')
+```
+
 ## Configuration
 
 Before running, edit the paths at the top of `config.py`:
