@@ -79,3 +79,5 @@ Two additional pieces can be run independently of the main pipeline:
 ## Reproducibility
 
 All stochastic steps (train/test splits, cross-validation folds, bootstrap resampling, y-scrambling permutations) use a fixed `RANDOM_STATE` (set in `config.py`, default 42), so a full re-run should reproduce the thesis's reported numbers exactly, given the same input data.
+
+Furthermore, `all_molecules.pkl` (all methods molecules processed) has been included as well as csv files of the generated molecules per method in `data`
