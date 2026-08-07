@@ -1,0 +1,7 @@
+{
+    "true_r2": 0.9997996454020186,
+    "mean_scrambled_r2": -0.05086287536192848,
+    "max_scrambled_r2": -0.04574766964807146,
+    "n_iterations": 50,
+    "permutation_p_value": 0.0196078431372549
+}

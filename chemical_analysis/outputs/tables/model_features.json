@@ -1,0 +1,10 @@
+{
+    "features": [
+        "MolWt",
+        "LogP",
+        "TPSA",
+        "SA_Score",
+        "Lmax",
+        "OS"
+    ]
+}

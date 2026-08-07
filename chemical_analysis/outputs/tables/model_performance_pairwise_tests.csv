@@ -1,0 +1,4 @@
+Comparison,Group_A,Group_B,Statistic,p_value
+Model performance: UV_Filter_Score,HC,NO-RL,1424.0,0.23166622013101779
+Model performance: UV_Filter_Score,HC,RL,1325.0,0.6075389657421122
+Model performance: UV_Filter_Score,NO-RL,RL,1098.0,0.2962940227084747
