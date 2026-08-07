@@ -50,7 +50,7 @@ Before running, edit the paths at the top of `config.py`:
 | `DATASETS` | Paths to each method's generated-molecules CSV (`compoundsRL.csv`, `compoundsHC.csv`, `compoundsNORL.csv`) |
 | `ECHA_REFERENCE_PATH` | The external validation reference CSV (regulator-approved UV filters with experimental λmax/OS) |
 
-**Note**: the No-RL generation script (`prior_sample.py`, in `acegen_scripts/`) writes its output as `prior_only_smiles.csv` by default — rename this (or update `DATASETS["NO-RL"]` in `config.py`) to match whichever filename you configure.
+**Note**: the No-RL generation script (`norl.py`, in `acegen_scripts/`) writes its output as `prior_only_smiles.csv` by default — rename this (or update `DATASETS["NO-RL"]` in `config.py`) to match whichever filename you configure.
 
 Modelling/statistical hyperparameters (random forest size, CV folds, bootstrap iterations, y-scrambling iterations, etc.) are also centralised in `config.py` — see the comments there for what each controls.
 
