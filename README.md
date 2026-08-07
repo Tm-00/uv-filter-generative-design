@@ -27,4 +27,4 @@ Mitchell, T. (2026). Generative Artificial Intelligence for Designing Safer Chem
 
 ## License
 
-MIT
+BSD-3-Clause license
