@@ -1,6 +1,6 @@
 # De Novo UV-Filter Generation via Reinforcement Learning
 
-Code accompanying the thesis *"[Your Thesis Title]"* — an evaluation of reinforcement learning strategies (REINFORCE, Hill Climb, and an unguided baseline) for de novo generation of candidate UV filters, using an adapted [ACEGEN](#) generative framework.
+Code accompanying the thesis Generative Artificial Intelligence for Designing Safer Chemicals - an evaluation of reinforcement learning strategies (REINFORCE, Hill Climb, and an unguided baseline) for de novo generation of candidate UV filters, using an adapted [ACEGEN](#) generative framework.
 
 ## Repository structure
 
@@ -22,9 +22,9 @@ See each subfolder's README for full details.
 If you use this code, please cite:
 
 ```
-[Your thesis citation here]
+Mitchell, T. (2026). Generative Artificial Intelligence for Designing Safer Chemicals (Unpublished MSc thesis). University of Birmingham.
 ```
 
 ## License
 
-[Add your chosen license — e.g. MIT, or check your institution's policy on thesis code]
+MIT
