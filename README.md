@@ -1,6 +1,6 @@
 # De Novo UV-Filter Generation via Reinforcement Learning
 
-Code accompanying the thesis Generative Artificial Intelligence for Designing Safer Chemicals - an evaluation of reinforcement learning strategies (REINFORCE, Hill Climb, and an unguided baseline) for de novo generation of candidate UV filters, using an adapted [ACEGEN](#) generative framework.
+Code accompanying the thesis Generative Artificial Intelligence for Designing Safer Chemicals - an evaluation of reinforcement learning strategies (REINFORCE, Hill Climb, and an unguided baseline) for de novo generation of candidate UV filters, using an adapted [ACEGEN](https://github.com/Acellera/acegen-open/tree/main) generative framework.
 
 ## Repository structure
 
