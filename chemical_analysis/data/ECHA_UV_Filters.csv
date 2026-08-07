@@ -1,0 +1,23 @@
+﻿Ref,Name,CAS,SMILES,Lmax,OS,Source
+3,Homosalate,118-56-9 ,CC1CC(CC(C1)(C)C)OC(=O)C2=CC=CC=C2O,294,0.1376,doi/10.1021/acsomega.5c09234
+3,Homosalate,118-56-9 ,CC1CC(CC(C1)(C)C)OC(=O)C2=CC=CC=C2O,290,0.1085,doi/10.1021/acsomega.5c09234
+4,Oxybenzone,131-57-7 ,COC1=CC(=C(C=C1)C(=O)C2=CC=CC=C2)O,291,0.1305,https://doi.org/10.1021/acsomega.4c10102
+4,Oxybenzone,131-57-7 ,COC1=CC(=C(C=C1)C(=O)C2=CC=CC=C2)O,285,0.235,dx.doi.org/10.1021/jp306130y
+6,Ensulizole,27503-81-7,C1=CC=C(C=C1)C2=NC3=C(N2)C=C(C=C3)S(=O)(=O)O,302,0.89,https://pubs.acs.org/doi/10.1021/acsphyschemau.4c00070
+7,Ecamsule,92761-26-7,CC1(C2CCC1(C(=O)C2=CC3=CC=C(C=C3)C=C4C5CCC(C4=O)(C5(C)C)CS(=O)(=O)O)CS(=O)(=O)O)C,366,1.3406,https://doi.org/10.1007/s00723-020-01198-x
+8,Avobenzone,70356-09-1 ,CC(C)(C)C1=CC=C(C=C1)C(=O)CC(=O)C2=CC=C(C=C2)OC,291,0.0238,https://doi.org/10.1021/acsomega.4c10102
+10,Octocrilene,6197-30-4,CCCCC(CC)COC(=O)C(=C(C1=CC=CC=C1)C2=CC=CC=C2)C#N,307,0.675,https://doi.org/10.1364/OE.24.010700
+12,Octinoxate,5466-77-3 ,CCCCC(CC)COC(=O)/C=C/C1=CC=C(C=C1)OC,311,1.0075,https://doi.org/10.1021/acsomega.4c10102
+12,Octinoxate,5466-77-3 ,CCCCC(CC)COC(=O)/C=C/C1=CC=C(C=C1)OC,321,0.96,https://doi.org/10.1007/s00894-015-2689-y
+13,Ethoxylated ethyl-4-aminobenzoate ,116242-27-4 ,C1=CC(=CC=C1C(=O)OCCO)N(CCOCCO)CCOCCO,267,0.405,https://doi.org/10.1016/j.saa.2013.04.024
+15,Ethylhexyl Triazone ,88122-99-0 ,CCCCC(CC)COC(=O)C1=CC=C(C=C1)NC2=NC(=NC(=N2)NC3=CC=C(C=C3)C(=O)OCC(CC)CCCC)NC4=CC=C(C=C4)C(=O)OCC(CC)CCCC,319,1.1371,10.1021/acs.jpclett.7b00633
+16,Drometrizole Trisiloxane,155633-54-8 ,CC1=CC(=C(C(=C1)N2N=C3C=CC=CC3=N2)O)CC(C)C[Si](C)(O[Si](C)(C)C)O[Si](C)(C)C,333,0.3713,10.4236/cc.2021.93010
+17,Diethylhexyl Butamido Triazone ,154702-15-5 ,CCCCC(CC)COC(=O)C1=CC=C(C=C1)NC2=NC(=NC(=N2)NC3=CC=C(C=C3)C(=O)NC(C)(C)C)NC4=CC=C(C=C4)C(=O)OCC(CC)CCCC,314,,10.1039/c4pp00373j
+20,Octisalate,118-60-5 ,CCCC[C@@H](CC)COC(=O)C1=CC=CC=C1O,296,0.1,10.4028/www.scientific.net/AMM.855.15 
+20,Octisalate,118-60-5 ,CCCC[C@@H](CC)COC(=O)C1=CC=CC=C1O,294,0.1322,doi/10.1021/acsomega.5c09234
+20,Octisalate,118-60-5 ,CCCC[C@@H](CC)COC(=O)C1=CC=CC=C1O,290,0.1,doi/10.1021/acsomega.5c09234
+21,Padimate,21245-02-3 ,CCCCC(CC)COC(=O)C1=CC=C(C=C1)N(C)C,292,0.703,https://doi.org/10.1021/acsomega.4c10102
+24,Bisdisulizole disodium,180898-37-7,C1=CC(=CC=C1C2=NC3=C(N2)C=C(C=C3S(=O)(=O)[O-])S(=O)(=O)O)C4=NC5=C(N4)C=C(C=C5S(=O)(=O)[O-])S(=O)(=O)O.[Na+].[Na+],334,,https://pubs.acs.org/doi/10.1021/acsphyschemau.4c00070
+25,Bemotrizinol,187393-00-6,CCCCC(CC)COC1=CC(=C(C=C1)C2=NC(=NC(=N2)C3=CC=C(C=C3)OC)C4=C(C=C(C=C4)OCC(CC)CCCC)O)O,350,1.005,doi/10.1021/acsomega.5c09234
+28,Diethylamino Hydroxybenzoyl Hexyl Benzoate ,302776-68-7,CCCCCCOC(=O)C1=CC=CC=C1C(=O)C2=C(C=C(C=C2)N(CC)CC)O,354,0.8004,https://doi.org/10.1007/s43630-023-00435-z
+29,Tris-biphenyl triazine,31274-51-8,C1=CC=C(C=C1)C2=CC=C(C=C2)C3=NC(=NC(=N3)C4=CC=C(C=C4)C5=CC=CC=C5)C6=CC=C(C=C6)C7=CC=CC=C7,316,1.245,https://doi.org/10.1007/s43630-023-00436-y
