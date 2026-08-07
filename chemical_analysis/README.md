@@ -30,7 +30,7 @@ Figure generation for the top-molecules structure grid (`novelty_check.py`, `src
 - On an HPC system, check for an available X11/Mesa module (`module spider X11`)
 - Add `libxrender1` to your container/environment manually
 
-Modules used for reference. 
+Modules used for reference. (BlueBear HPC on Python/jupyter notebook)
 ```
 import module
 await module.purge(force=True)
