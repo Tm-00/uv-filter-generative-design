@@ -1,0 +1,41 @@
+#This section remains consistent across all scripts
+
+# Logging configuration
+experiment_name: reinforce_gpt2_1 # Used for logging to WandB or TensorBoard
+agent_name: reinforce # Used for logging to WandB or TensorBoard
+log_dir: <YOUR_BASE_PATH>/results/gpt2 # Path where results will be saved
+logger_backend: null  # wandb, tensorboard, or null
+seed: 101 # Set the seed of each experiment. Multiple seeds can be provided as a list for sequential experiments, e.g., [101, 102, 103]
+
+#Consistent across all scripts, this section allows defining the number of molecules to generate in parallel in each iteration, as well as the total size of the generated library of molecules:
+# Environment configuration
+num_envs: 128 # Number of smiles to generate in parallel
+total_smiles: 10_000 # Total number of smiles to generate
+
+# Scoring function
+molscore_mode: null # single, benchmark, or curriculum
+molscore_task: null # MolOpt:Albuterol_similarity # selects the Albuterol_similarity task from the MolOpt benchmark
+# molscore_task accepts task configuration files (JSON), benchmark (preset only), or curriculum task (preset only)
+# Refer to MolScore documentation for more information
+custom_task: UV_FILTER # Requires molscore_task mode to be set to null # Refer to the tutorials for more information on how to use custom scoring functions / tasks
+
+# Promptsmiles configuration
+prompt: null  # e.g. c1ccccc  # Fix the beginning of the generated molecules
+
+# Model architecture
+model: gpt2 # gru, lstm, gpt2, mamba or llama2
+# The default prior varies for each model. Refer to the README file in the root directory for more information.
+# The default vocabulary varies for each prior. Refer to the README file in the root directory for more information.
+custom_model_factory: null # Path to a custom model factory (e.g. my_module.create_model)
+
+# Optimizer configuration
+lr: 0.0001
+eps: 1.0e-08
+weight_decay: 0.0
+
+# Algorithm configuration (not additional parameters for Reinforce)
+
+# Data replay configuration
+experience_replay: True
+replay_buffer_size: 100
+replay_batch_size: 10
