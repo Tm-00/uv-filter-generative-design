@@ -1,0 +1,37 @@
+# Logging configuration
+experiment_name: hill_climb_gpt2_1
+agent_name: hill_climb
+log_dir: <YOUR_BASE_PATH>/results/gpt2
+logger_backend: null
+seed: 101
+
+# Environment configuration
+num_envs: 128
+total_smiles: 10_000
+
+# Scoring function
+molscore_mode: null
+molscore_task: null
+custom_task: UV_FILTER
+
+# Promptsmiles configuration
+prompt: null
+
+# Model architecture
+model: gpt2
+custom_model_factory: null
+
+# Optimizer configuration
+lr: 0.0001
+eps: 1.0e-08
+weight_decay: 0.0
+
+# Algorithm-specific (hill climb only)
+topk: 0.5          # fraction of each batch kept as "elites" for retraining
+num_mini_batches: 2
+num_epochs: 1
+
+# Data replay configuration
+experience_replay: True
+replay_buffer_size: 100
+replay_batch_size: 10
