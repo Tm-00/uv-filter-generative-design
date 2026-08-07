@@ -1113,13 +1113,14 @@ def plot_y_scrambling(
 # ------------------------------------------------------------
 
 
+
 def plot_top_molecules_grid(
     df,
     n_per_method=5,
     rank_by="UV_Filter_Score",
     novelty_column=None,
     mols_per_row=5,
-    sub_img_size=(280, 300),
+    sub_img_size=(600, 600),
     save_path=None
 ):
     """
@@ -1128,39 +1129,29 @@ def plot_top_molecules_grid(
     closing figure - a concrete complement to the population-level
     statistics elsewhere in the pipeline.
 
-    Legends are kept to a single line (Method | score[ | novelty]),
-    since RDKit's MolsToGridImage legend area is sized for one line of
-    text and does not reliably render multi-line legends - passing a
-    multi-line string there causes clipped/overlapping text rather than
-    a wrapped label. Full per-molecule descriptor values belong in the
-    accompanying results table, not repeated here.
-
     Parameters
     ----------
     df : pandas.DataFrame
         Must contain "Method", "Canonical_SMILES", and the column named
-        in `rank_by`.
+        in `rank_by`. LogP, Lmax, OS are included in labels when present.
 
     n_per_method : int
         How many top molecules to draw per method.
 
     rank_by : str
         Column used to select the top molecules within each method
-        (highest values first), and shown in the legend.
+        (highest values first).
 
     novelty_column : str, optional
         Column name containing a boolean/label indicating whether a
         molecule was found in an external database (e.g. from a PubChem
-        lookup). If provided, "Known" / "Novel*" is appended to each
-        label.
+        lookup). If provided, "Known" / "Novel*" is added to each label.
 
     mols_per_row : int
         Grid width.
 
     sub_img_size : (int, int)
-        Pixel size of each structure panel. Slightly taller than the
-        previous default to keep the single-line legend comfortably
-        legible.
+        Pixel size of each structure panel.
 
     save_path : str or Path, optional
         Where to save the grid image (PNG).
@@ -1172,6 +1163,21 @@ def plot_top_molecules_grid(
 
     from rdkit import Chem
     from rdkit.Chem import Draw
+    from rdkit.Chem.Draw import rdMolDraw2D
+    draw_options = rdMolDraw2D.MolDrawOptions()
+    draw_options.legendFontSize = 24  
+
+    label_fields = [
+        f for f in [rank_by, "Lmax", "OS", "LogP"]
+        if f in df.columns
+    ]
+
+    # de-duplicate while preserving order (rank_by may already be in the list)
+    seen = set()
+    label_fields = [
+        f for f in label_fields
+        if not (f in seen or seen.add(f))
+    ]
 
     mols = []
     legends = []
@@ -1199,7 +1205,13 @@ def plot_top_molecules_grid(
 
             mols.append(mol)
 
-            legend = f"{method} | {rank_by}={row[rank_by]:.2f}"
+            parts = [f"{method}"]
+
+            for field in label_fields:
+
+                parts.append(
+                    f"{field}={row[field]:.2f}"
+                )
 
             if novelty_column and novelty_column in df.columns:
 
@@ -1209,10 +1221,12 @@ def plot_top_molecules_grid(
                     else "Known"
                 )
 
-                legend += f" | {status}"
+                parts.append(
+                    status
+                )
 
             legends.append(
-                legend
+                "\n".join(parts)
             )
 
     grid = Draw.MolsToGridImage(
@@ -1220,13 +1234,14 @@ def plot_top_molecules_grid(
         molsPerRow=mols_per_row,
         subImgSize=sub_img_size,
         legends=legends,
+        drawOptions=draw_options,
         returnPNG=False
     )
 
     if save_path:
 
         grid.save(
-            save_path
+            save_path,
         )
 
     return grid
