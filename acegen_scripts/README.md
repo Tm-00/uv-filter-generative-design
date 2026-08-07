@@ -24,7 +24,7 @@ This folder contains the custom scripts written on top of [ACEGEN](https://githu
    <your-acegen-install>/priors/qsar_uv_filters/os_predictor.pkl
    ```
    **These pickle files are not included in this repository** and need to be added separately (e.g. via Git LFS, or a download step in this README, depending on their size). Without them, `uv_filter.py` will fail on import.
-4. **Place the three generation scripts** (`reinforce.py`, `hill_climb.py`, `prior_sample.py`) each in their own directory alongside a copy of `config_denovo.yaml`, matching ACEGEN's expected script layout (each script loads its config via Hydra with `config_path="."`, i.e. the same directory as the script itself) — check ACEGEN's own documentation for the exact convention its version expects, since this can vary between releases.
+4. **Place the generation scripts**. (`reinforce.py` and `norl.py`) share a directory (scripts/reinforce/) alongside a single copy of `config_denovo.yaml`, since norl.py reuses REINFORCE's config. `hill_climb.py` goes in its own directory (scripts/hill_climb/) alongside `config_gpt2_uvfilter.yaml`. Check ACEGEN's own documentation for the exact script-layout convention its version expects, since this can vary between releases.
 
 ## Running
 
