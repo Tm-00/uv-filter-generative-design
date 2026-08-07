@@ -1,6 +1,6 @@
 # ACEGEN Scripts (UV-Filter Adaptation)
 
-This folder contains the custom scripts written on top of [ACEGEN](#) (Bou et al., 2024) to adapt it from its original drug-discovery focus to de novo UV-filter generation. **This is not a copy of ACEGEN itself** - ACEGEN is a separate, third-party framework you need to install independently; this folder only contains what was written or modified for this project.
+This folder contains the custom scripts written on top of [ACEGEN](https://github.com/Acellera/acegen-open) (Bou et al., 2024) to adapt it from its original drug-discovery focus to de novo UV-filter generation. **This is not a copy of ACEGEN itself** - ACEGEN is a separate, third-party framework you need to install independently; this folder only contains what was written or modified for this project.
 
 > **TODO**: add the actual ACEGEN repository link/citation here before publishing.
 
