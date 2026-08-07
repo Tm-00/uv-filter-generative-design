@@ -1,6 +1,6 @@
 # ACEGEN Scripts (UV-Filter Adaptation)
 
-This folder contains the custom scripts written on top of [ACEGEN](#) (Bou et al., 2024) to adapt it from its original drug-discovery focus to de novo UV-filter generation. **This is not a copy of ACEGEN itself** — ACEGEN is a separate, third-party framework you need to install independently; this folder only contains what was written or modified for this project.
+This folder contains the custom scripts written on top of [ACEGEN](#) (Bou et al., 2024) to adapt it from its original drug-discovery focus to de novo UV-filter generation. **This is not a copy of ACEGEN itself** - ACEGEN is a separate, third-party framework you need to install independently; this folder only contains what was written or modified for this project.
 
 > **TODO**: add the actual ACEGEN repository link/citation here before publishing.
 
@@ -9,9 +9,9 @@ This folder contains the custom scripts written on top of [ACEGEN](#) (Bou et al
 | File | Purpose |
 |---|---|
 | `scoring_functions/uv_filter.py` | Custom scoring function: loads two pretrained QSAR models (λmax, oscillator strength predictors) and combines them with LogP into a single scalar reward via geometric mean |
-| `reinforce.py` | REINFORCE generation strategy — reward-weighted policy-gradient training on the full generated batch each step |
-| `hill_climb.py` | Hill Climb generation strategy — trains only on the top-*k* highest-reward molecules per batch via unweighted maximum-likelihood loss |
-| `prior_sample.py` | No-RL baseline — samples from the frozen pretrained prior with no training, for comparison against the two RL strategies |
+| `reinforce.py` | REINFORCE generation strategy - reward-weighted policy-gradient training on the full generated batch each step |
+| `hill_climb.py` | Hill Climb generation strategy - trains only on the top-*k* highest-reward molecules per batch via unweighted maximum-likelihood loss |
+| `prior_sample.py` | No-RL baseline - samples from the frozen pretrained prior with no training, for comparison against the two RL strategies |
 | `config_denovo.yaml` | Hyperparameters shared by all three scripts (batch size, learning rate, top-*k* fraction, replay buffer settings, total SMILES to generate, etc.) |
 
 ## Setup
